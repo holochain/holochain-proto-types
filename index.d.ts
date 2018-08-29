@@ -1,8 +1,5 @@
 // holochain ambient type defs for API
 
-// declare namespace holochain {
-
-
 declare function property(name: string): string;
 declare function makeHash (entryType: string, entryData: any): holochain.Hash;
 declare function debug(value: any): void;
@@ -26,11 +23,7 @@ declare var HC: holochain.HolochainSystemGlobals;
 declare var App: holochain.HolochainAppGlobals;
 
 
-	/*============================================
-	=            Holochain Data Types            =
-	============================================*/
 declare namespace holochain {
-
 	type Hash = string;
 	type Signature = string;
 	type HolochainError = object;
@@ -104,5 +97,4 @@ declare namespace holochain {
 	    String: string;
 	  }
 	}
-
 }
